@@ -57,8 +57,8 @@ class _MyAppState extends State<MyApp> {
                 child: Material(
                   child: InkWell(
                     onTap: () {
-                      Navigator.of(context).push(
-                          MaterialPageRoute(builder: (context) => const HOme()));
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => const HOme()));
                       setState(() {
                         col = Colors.red;
                       });
@@ -125,81 +125,6 @@ class _MyAppState extends State<MyApp> {
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
           //appbar
-          // Container(
-          //   margin: const EdgeInsets.only(top: 30),
-          //   width: 360,
-          //   height: 64,
-          //   color: Colors.white,
-          //   child: Row(
-          //     children: [
-          //       const SizedBox(
-          //         width: 15,
-          //       ),
-          //       Container(
-          //         height: 50,
-          //         width: 50,
-          //         decoration: BoxDecoration(
-          //           color: Colors.black,
-          //           borderRadius: BorderRadiusDirectional.circular(30),
-          //           image: const DecorationImage(
-          //             image: AssetImage('assets/dp.png'),
-          //             fit: BoxFit.contain,
-          //           ),
-          //         ),
-          //       ),
-          //       const SizedBox(
-          //         width: 10,
-          //       ),
-          //       Column(
-          //         crossAxisAlignment: CrossAxisAlignment.start,
-          //         mainAxisAlignment: MainAxisAlignment.center,
-          //         children: const [
-          //           Text(
-          //             "Welcome back,",
-          //             style: TextStyle(
-          //                 fontSize: 12, color: Color.fromRGBO(82, 82, 81, 1)),
-          //           ),
-          //           Text(
-          //             "Waseem Akram",
-          //             style: TextStyle(
-          //                 fontSize: 16,
-          //                 fontWeight: FontWeight.bold,
-          //                 color: Color.fromARGB(255, 0, 0, 0)),
-          //           ),
-          //         ],
-          //       ),
-          //       Expanded(child: Container()),
-          //       ClipRRect(
-          //         borderRadius: BorderRadius.circular(30),
-          //         child: Material(
-          //           child: InkWell(
-          //             onTap: () {
-          //               setState(() {
-          //                 cols = Colors.white;
-          //               });
-          //             },
-          //             child: Ink(
-          //               height: 55,
-          //               width: 55,
-          //               // padding: const EdgeInsets.all(20),
-          //               decoration: BoxDecoration(
-          //                 color: cols,
-          //                 borderRadius: BorderRadius.circular(30),
-          //               ),
-          //               child: const Center(
-          //                 child:
-          //                     Icon(Icons.widgets_outlined, color: Colors.black),
-          //               ),
-          //             ),
-          //           ),
-          //         ),
-          //       ),
-          //       const SizedBox(
-          //         width: 10,
-          //       )
-          //     ],
-          //   ),
-          // ),
           appbar("Waseem Akram"),
           bar(),
           //body
